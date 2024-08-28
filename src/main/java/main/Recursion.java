@@ -3,10 +3,7 @@ package main.java.main;
 public class Recursion {
     // Q1: Return the sum of all numbers from 1 to n.
     public int Sumof(int n) { 
-        if(n < 1){
-            return 0;
-        }
-        return n+Sumof(n-1);
+
     }
     // Q2: Return the sum of all odd numbers from 1 to n.
     public int SumOdd(int n) { 
