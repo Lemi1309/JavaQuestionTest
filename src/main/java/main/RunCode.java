@@ -153,7 +153,7 @@ class RunCode {
         // Q9: factorial
         if (isMethodDefined(recursion, "factorial", int.class)) {
             try {
-                if ((int) invokeMethod(recursion, "factorial", 5) == 120) {
+                if ((int) invokeMethod(recursion, "factorial", 10) == 3628800) {
                     score += 1;
                     System.out.println("Q9 Correct");
                 } else {
@@ -166,10 +166,10 @@ class RunCode {
             System.out.println("Q9 Function Not Defined");
         }
 
-        // Q10: fibonacci
+        // Q10: fibonacci 
         if (isMethodDefined(recursion, "fibonacci", int.class)) {
             try {
-                if ((int) invokeMethod(recursion, "fibonacci", 6) == 8) {
+                if ((int) invokeMethod(recursion, "fibonacci", 10) == 55) {
                     score += 1;
                     System.out.println("Q10 Correct");
                 } else {
