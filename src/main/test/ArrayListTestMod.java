@@ -101,5 +101,14 @@ public class ArrayListTestMod {
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 4, 45, 99, 99));
         Assert.assertEquals(practice.secondLargest(list), 45);
     }
+
+    @Test
+    public void testFindCommonElements() {
+        ArrayListPractice practice = new ArrayListPractice();
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(3, 4, 5, 6, 7));
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3, 4, 5));
+        Assert.assertEquals(practice.findCommonElements(list1, list2), expected);
+    }
 }
 

@@ -395,6 +395,24 @@ class RunCode {
         } else {
             System.out.println("Q12 Function Not Defined");
         }
+         // Test Q13: findCommonElements
+         ArrayList<Integer> list6 = new ArrayList<>(Arrays.asList(3, 4, 5, 6, 7));
+         ArrayList<Integer> expectedCommon = new ArrayList<>(Arrays.asList(3, 4, 5));
+         if (isMethodDefined(practice, "findCommonElements", ArrayList.class, ArrayList.class)) {
+             try {
+                 ArrayList<Integer> resultCommon = (ArrayList<Integer>) invokeMethod(practice, "findCommonElements", list1, list6);
+                 if (resultCommon.equals(expectedCommon)) {
+                     score += 1;
+                     System.out.println("Q13 Correct");
+                 } else {
+                     System.out.println("Q13 Incorrect");
+                 }
+             } catch (Exception e) {
+                 System.out.println("Q13 Incorrect - Error during execution");
+             }
+         } else {
+             System.out.println("Q13 Function Not Defined");
+         }
 
         System.out.println("Score: " + score);
     }

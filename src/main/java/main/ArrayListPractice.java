@@ -51,5 +51,9 @@ public class ArrayListPractice {
     public int secondLargest(ArrayList<Integer> list) { 
 
     }
+    // Q13: Return a new ArrayList containing only the elements that are present in both input ArrayLists.
+    public ArrayList<Integer> findCommonElements(ArrayList<Integer> list1, ArrayList<Integer> list2) { 
+
+    }
 }
 
